@@ -12,24 +12,6 @@ calculating and printing the amount of change (payment - totalsum) to customer.
 
 You must use in this program: [], while, cin, cout, endl
 
-Example output:
-Supermarket
-===========
-Please select product (1-10) 0 to Quit: 1
-Product: 1 Price: 10
-Please select product (1-10) 0 to Quit: 6
-Product: 6 Price: 13
-Please select product (1-10) 0 to Quit: 11
-Please select correct product (1-10)
-Please select product (1-10) 0 to Quit: 10
-Product: 10 Price: 77
-Please select product (1-10) 0 to Quit: 5
-Product: 5 Price: 44
-Please select product (1-10) 0 to Quit: 0
-Total: 144
-Payment: 200
-Change: 56
-
 */
 
 #include <iostream>
@@ -42,7 +24,6 @@ int super_market() {
 
     cout << "Supermarket" << endl;
     cout << "===========" << endl;
-
 
     while (num != 0) {
         cout << "Please select product (1-10) 0 to Quit: ";
@@ -63,3 +44,23 @@ int super_market() {
 
     return 0;
 }
+
+/*
+Example output:
+Supermarket
+===========
+Please select product (1-10) 0 to Quit: 1
+Product: 1 Price: 10
+Please select product (1-10) 0 to Quit: 6
+Product: 6 Price: 13
+Please select product (1-10) 0 to Quit: 11
+Please select correct product (1-10)
+Please select product (1-10) 0 to Quit: 10
+Product: 10 Price: 77
+Please select product (1-10) 0 to Quit: 5
+Product: 5 Price: 44
+Please select product (1-10) 0 to Quit: 0
+Total: 144
+Payment: 200
+Change: 56
+*/

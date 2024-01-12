@@ -23,7 +23,6 @@ int *bubblesort(int a[], int n) {
             }
         }
     }
-
     return a;
 }
 
@@ -46,5 +45,15 @@ int bubble_sort() {
     cout << sorted[number - 1] << "]" << endl;
 
     return 0;
-
 }
+
+/*
+Example output:
+Please Enter the Total Number of Elements : 5
+Please enter the 1 Element: 4
+Please enter the 2 Element: 3
+Please enter the 3 Element: -1
+Please enter the 4 Element: 9
+Please enter the 5 Element: 6
+The Sorted List in Ascending Order: [-1, 3, 4, 6, 9]
+*/

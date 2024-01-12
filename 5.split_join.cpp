@@ -1,6 +1,13 @@
+/*
+In this exercise we create two functions
+mysplit : which splits sentence (string) given as first argument using second
+argument as a separator character (char) to separate items. Function returns a
+vector of items (vector<string>).
+myjoin : which joins vector given as first argument (vector<string>) to a string
+separated with character given as second argument. Function returns a string (string).
+*/
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 vector<string> mysplit(string sentence, char sep);
@@ -30,7 +37,6 @@ vector<string> mysplit(string sentence, char sep) {
         i++;
     }
     words_array.push_back(temp);
-
     return words_array;
 }
 
@@ -43,7 +49,6 @@ string myjoin(vector<string> lst, char sep) {
             str.push_back(sep);
         i++;
     }
-
     return str;
 }
 
@@ -55,4 +60,4 @@ This
 is
 a
 sentence
- */
+*/

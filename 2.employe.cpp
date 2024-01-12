@@ -3,10 +3,9 @@ Make class Employee and its initialization method. Employee-class
 will have 2 attributes: id and name.
 
 Make program, which:
-
 fills the vector (vector<Employee>) with objects of Employee class. Id is a serial
- number from 1 and name will be asked from user and is given in a form "Firstname Surname".
- Use getline (cin,name) to read name.
+number from 1 and name will be asked from user and is given in a form "Firstname Surname".
+Use getline (cin,name) to read name.
 ends when user gives '0' instead of a name.
 in the end prints all Employees from the vector in a format shown in example below.
 Example output:
@@ -18,6 +17,7 @@ Id: 1 Name: Jane Doe
 Id: 2 Name: John Johnson
 Id: 3 Name: Richard Roe
 */
+
 #include <iostream>
 #include <vector>
 
@@ -49,7 +49,6 @@ Employee::Employee(int new_id, string new_name) {
 }
 
 int employee() {
-
     vector<Employee> employee;
     string name;
     int id = 1;
@@ -69,3 +68,14 @@ int employee() {
 
     return 0;
 }
+
+/*
+Example output:
+Please enter employee name (0 to quit): Jane Doe
+Please enter employee name (0 to quit): John Johnson
+Please enter employee name (0 to quit): Richard Roe
+Please enter employee name (0 to quit): 0
+Id: 1 Name: Jane Doe
+Id: 2 Name: John Johnson
+Id: 3 Name: Richard Roe
+*/

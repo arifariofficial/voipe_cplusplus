@@ -1,7 +1,3 @@
-#include <iostream>
-
-using namespace std;
-
 /*
 Make simple Supermarket -program,
 
@@ -36,10 +32,13 @@ Change: 56
 
 */
 
+#include <iostream>
+
+using namespace std;
 
 int super_market() {
     int prodprices[] = {10, 14, 22, 33, 44, 13, 22, 55, 66, 77};
-    int num = 1, total = 0, payment = 0;
+    int num = 1, totalsum = 0, payment = 0;
 
     cout << "Supermarket" << endl;
     cout << "===========" << endl;
@@ -49,7 +48,7 @@ int super_market() {
         cout << "Please select product (1-10) 0 to Quit: ";
         cin >> num;
         if (num > 0 && num < 11) {
-            total = total + prodprices[num - 1];
+            totalsum = totalsum + prodprices[num - 1];
             cout << "Product: " << num << " Price: " << prodprices[num - 1] << endl;
 
         } else if (num < 0 || num > 10) {
@@ -57,10 +56,10 @@ int super_market() {
         }
     }
 
-    cout << "Total: " << total << endl;
+    cout << "Total: " << totalsum << endl;
     cout << "Payment: ";
     cin >> payment;
-    cout << "Change: " << payment - total << endl;
+    cout << "Change: " << payment - totalsum << endl;
 
     return 0;
 }
